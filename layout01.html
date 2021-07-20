@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to Cake World</title>
+<style type="text/css">
+body{
+   background-image: url(img/back.png); /* 백그라운드 이미지를 지정 */
+   margin: 0;                           /* 바깥쪽 여백을 없앰 */
+   padding: 0;                          /* 안쪽 여백을 없앰 */
+   font-size: 0.75em;                   /* 글꼴 크기 */
+   line-height: 1.2em;                  /* 줄 간격 */
+   color: #333;                         /* 글꼴 색상 */
+}
+
+#wrap{   
+   /* 1024 × 768 해상도에 맞추어 웹 페이지 크기 지정*/   
+   width : 90%; 
+   /* 백그라운드 이미지 적용 */
+   background-image: url(img/shadow.png);
+   background-repeat: repeat-y;
+   /* 중앙에 배치 */
+   margin: 0;
+   margin-right: auto; 
+   margin-left: auto;
+   text-align: left;               /*텍스트를 왼쪽에 배치*/
+   /* 페이지에 출력할 내용이 없어도 최소 높이는 780px */
+   min-height: 780px;
+}
+
+#title h1, #title h2{
+   display: none;                   /*헤드라인 숨김 */
+}
+
+#ceil{                              /* 웹 페이지를 상단에 이미지 출력 */
+   width: 98%;
+   height: 60px;
+   margin: 0 0 0 10px;
+   background-image: url(img/ceil.PNG);
+   background-repeat: repeat-x;    /*  가로 방향으로 반복 */
+}
+
+#logo{                             /*  로고 이미지  */
+   float: left;                    /* 화면 왼쪽에 배치 */
+   width: 256px;
+   height: 100px;
+   margin: 20px 0 0 40px;
+} 
+/*리스트로 메인 메뉴 만들기*/
+nav#top_menu{
+   float: left;
+   width: 600px;
+   margin-top: 20px;
+}
+
+nav#top_menu ul{
+   list-style-type: none;
+   font-size: 24px;
+   font-weight: bold;
+}
+
+nav#top_menu ul li{
+   float: left;
+   margin: 0 15px;
+}
+nav#top_menu a{
+   text-decoration: none;
+   color: #333;
+   display: block;
+   height: 20px;
+}
+nav#top_menu a:HOVER{
+   color: #FFB6C1;
+   font-size: 25px;
+}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="sub_header">
+			<div id="ceil"></div>
+			<div id="logo">
+				<a href="index.html"><img id="#" src="img/logo.PNG" width="240" height="80"></a>			
+			</div>
+			<hgroup id="title">
+				<h1>Cake World</h1>
+				<h2>Cake's History</h2>
+			</hgroup>
+
+			<nav id="top_menu">
+				<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">Cake's history</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="clear"></div>
+
+		<nav id="sub_menu">
+			<!--사이드 메뉴-->
+		</nav>
+
+		<section id="sub_section">
+			<!--본문-->
+		</section>
+		<div class="clear"></div>
+
+		<footer>
+			<!--푸터-->
+		</footer>
+	</div>
+</body>
+</html>
